@@ -50,110 +50,16 @@ li { text-align:justify; }
 <div style="text-align:center; width:800px; margin:auto;" id="top">
 
 <table border="0" cellpadding="2" cellspacing="2" width="800">
-<!-- <tr>
+<tr>
 	<td style="vertical-align:middle; text-align:center; height:150px; background-color:#ffffff;" colspan=2>
-		<h1 style="color:#002b5b;">CSCI 441 - Computer Graphics</h1>
-		<h2 style="color:#002b5b;">Fall 2023</h2>
+		<h1 style="color:#002b5b;">ASHER DYKSTRA OWNS THIS WEBSITE</h1>
 	</td>
-</tr> -->
-<!-- <tr><td class="header" style="height:30px;" colspan="2"> -->
-<!-- | &nbsp;
-&nbsp; <a href="https://cs-courses.mines.edu/csci441/index.html">Home</a> &nbsp; | 
-&nbsp; <a href="https://cs-courses.mines.edu/csci441/assignments.html">Assignments</a> &nbsp;| 
-&nbsp; <a href="https://cs-courses.mines.edu/csci441/leaderboard.html">Leaderboard</a> &nbsp;| 
-&nbsp; <a href="https://cs-courses.mines.edu/csci441/schedule.html">Schedule</a> &nbsp;| 
-&nbsp; <a href="https://cs-courses.mines.edu/csci441/resources.html">Resources</a> &nbsp; 
-&nbsp;| -->
+</tr>
+<tr><td class="header" style="height:30px;" colspan="2">
+|&nbsp;
+&nbsp; <a href="https://asherdykstra.com/openGL.html">OpenGL</a> &nbsp;
+&nbsp;|
 
-<!-- </td></tr> -->
-
-<tr><td class="mainContent" colspan="2">
-<!--  THIS IS AN HTML COMMENT -->
-
-<!-- Change "YOUR HERO NAME" to...your hero's name! -->
-<!-- <h3> "FafGar" </h3> -->
-
-<!-- The line below will display an image -->
-<!-- Place your screenshot into the images folder, and then update the filename below -->
-<!-- For future assignments, you will want to display all of your images 
-        so keep adding them to this list with a description of each -->
-<img src="images/Banner.png">
-    
-<!-- The <br> tag inserts a new line onto the page -->
-<br>
-<h2>Welcome to the portfolio!</h2>
-This page serves as a place to demonstrate all of the (hopefully) AMAZING work done by Asher Dykstra under the name FafGar for CSCI 441 at Colorado School of Mines. 
-This banner at the top was made with love and hand plotted vertices for OpenGL triangle primitives.
-
-<h3>Final Project Fun Times</h3>
-<img src="images/FP1.png" width="300px">
-<img src="images/FP2.png" width="300px">
-<img src="images/FP3.png" width="300px">
-<img src="images/FP4.png" width="300px">
-
-<br>
-My final piece of work for this course was a pool game implemented from scratch with a group of two other students. The game has two human players (one with blue hands and one with red hands)
- play pool with a fully implemented rule set. On a given players turn, the ball in the lower right corner shows the type of ball they are trying to sink or the 8 ball when no balls have been sunk. 
- Additionally, a power meter will appear in the lower left corner when a player is attempting a shot. The whole table can be seen floating above the pedestrian plaza on the Mines campus. 
- The model for this representation was assembled using Google Maps data.
-<br>
-On the technical side, all shaders used in the game implement phong shading with a form of cel shading to achieve the cartoon eque effect shown. All the physics for the ball collisions 
-were written from scratch. With the exception of the balls, all mesh data was read in from external files.
-
-<h3>When Gremlins Attack</h3>
-<img src="images/A5_1.png" width="300px">
-<img src="images/A5_2.png" width="300px">
-<br>
-Once again expanding on the capabilities of the group project below, I created an incredibly basic game. The goal is simply to reach the cone shown in the second picture before
-any of the little red guys touch you. The red guys (gremlins) were implemented as a form of particle system, that is to say each of the gremlins handled all of its own interactions, movement,
-and orientation. Each gremlin automatically aligns its heading to face towards the player and simply moves along it. If two gremlins collide, one of them will get confused and turn around. Once
-the player reaches the goal cone, all the gremlins disappear and the player can once again roam freely. Be careful of the edge though! It is now possible to fall off.
-
-<h3>Time to Get Curvy</h3>
-<img src="images/A4_1.png" width="300px">
-<img src="images/A4_2.png" width="300px">
-<br>
-Expanding on the capabilities of the "Let There Be Light" project below, I implemented Bezier curve rendering within the program. Control point positions for the curve are read in from an 
-external file before being used to calculate a sampling of points along the curve to draw the curve between. Another sampling of the curve is also taken and placed in a lookup table
-so that the cone which travels along the curve may approximate travelling by total arc length instead of by individual arc completion percentage. As can be seen in the photos above,
-the user can choose whether or not the curve itself and its control cage are actually drawn. The differing colors of cone represent arc length and arc completion movement modes.
-
-<h3>Let There Be Light</h3>
-<img src="images/fellowship1.png" width="300px">
-<img src="images/fellowship2.png" width="300px">
-<br>
-As an expansion of the program below, I and two team members worked to expand our 3D graphical capabilities by adding more cameras and advanced lighting. The image on the left is two 
-of our heroes being lit by a blue point light, and the one on the right is those same heroes being lit by a red spot light. Gouraud shading was used to apply the Phong Reflectance model
-in this simulation, which can be seen in the luster on the backgound objects.
-
-<h3>THE THIRD DIMENSION!</h3>
-<img src="images/A3.1.png" width="300px">
-<img src="images/A3.2.png" width="300px">
-<br>
-This program was a basic step into 3D methematics and manipulation in OpenGL. This included work with model, view, and projection matrices. The character seen could walk
-around the scene with programatic animation and both cameras followed him automatically.
-
-
-<h3>Interactivity!</h3>
-<img src="images/redShirt.png" width="300px">
-<img src="images/greenShirt.png" width="300px">
-<br>
-<img src="images/funkyShirt.png" width="300px">
-<img src="images/blueShirt.png" width="300px">
-<br>
-Although it's hard to tell from these static images, this program could interact with the user. GLFW callback functions allowed the handsome bearded fellow there to roam around the screen
-and change the color of his shirt. 
-
-<h3>The Very Basics</h3>
-<img src="images/triforce.png" width="300px">
-<img src="images/home.png" width="300px">
-<br>
-As a first foray into real OpenGL, I made some triangles appear! WooHoo! These triangles were then improved by creating the scene above entirely with triangle primitives and 
-transformations using the GLM toolkit.
-
-
-
-</td></tr>
 
 <tr>
 <td class="header" style="height:30px" colspan="2">

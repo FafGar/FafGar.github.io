@@ -11,21 +11,58 @@
   
   <body class="bodyclass">
 <div class="backgroundbox"></div>
+
+<div id="mousePic" style="position: absolute; transform: translate(-50%, -50%); z-index: -20;">
+	<img src="images/underConstruction.png"  width="50">
+
+	<!-- MAKE THIS INTO SOME SNAKEY THING THAT FOLLOWS THE CURSOR -->
+</div>
+
+
+<script>
+	const pic = document.getElementById("mousePic");
+
+	window.onpointermove = (move) =>{
+		const { clientX, clientY } = move;
+		console.log(move)
+		pic.animate({
+			left: `${clientX}px`,
+			top: `${clientY}px`
+		}, { duration: 250, fill: "forwards" });
+	}
+
+
+
+    // const blob = document.getElementById("glowbg");
+    // const blobblur = document.getElementById("blurbg");
+    // window.onpointermove = event => { 
+    //   const { clientX, clientY } = event;
+      
+    //   blob.animate({
+    //     left: `${clientX}px`,
+    //     top: `${clientY}px`
+    //   }, { duration: 250, fill: "forwards" });
+    //   blobblur.animate({
+    //     left: `${clientX}px`,
+    //     top: `${clientY}px`
+    //   }, { duration: 250, fill: "forwards" });
+    // }
+  
+</script>
+
 <div style="text-align:center; width:800px; margin:auto;" id="top">
 
-<table border="0" cellpadding="2" cellspacing="2" width="800">
-<tr>
-	<td style="vertical-align:middle; text-align:center; height:150px; background-color:#ffffff;" colspan=2>
-		<h1 style="color:#002b5b;">Asher Dykstra's Website</h1>
-		Do not touch except for Asher
-	</td>
-</tr>
-
+<div class="page_title">
+	<h1 style="font-size: 60px; color: #ffffff;">Asher Dykstra's Website</h1>
+	Do not touch except for Asher
+</div>
+		
+<br>
 <table border="0" cellpadding="5" cellspacing="2" width="800">
 	<tr>
-		<h2 style="color: #ffffff;">
+		<div class="spacer">
 			FAQ
-		</h2>
+		</div>
 	</tr>
 	<tr>
 		
@@ -47,11 +84,9 @@
 </table>
 
 <table border="0" cellpadding="5" cellspacing="2" width="800">
-	<tr>
-		<h2 style="color: #ffffff;">
-			Project Pages
-		</h2>
-	</tr>
+	L<div class="spacer">
+		Project Pages
+	</div>
 	<tr>
 		<td class="header" style="height:30px;" colspan="2">
 			|&nbsp;

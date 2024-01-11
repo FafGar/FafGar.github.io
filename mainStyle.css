@@ -23,7 +23,7 @@ img.linkIcon{
 div.backgroundbox {
 	width: 100%;
 	height: 100%;
-	background-color: #182c24;
+	background-color: #27323b;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -40,8 +40,8 @@ div.page_title{
 	padding-top: 10px
 }
 
-div.spacer{
-	border-radius: 12px;
+td.header{
+	border-radius: 15px;
 	background-color: #41040c;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 35px;
@@ -49,8 +49,8 @@ div.spacer{
 	color: white;
 }
 
-
-td.header { 
+td.footer { 
+	border-radius: 15px;
 	text-align:center; 
 	border-style:solid none solid none; 
 	border-color:#ffffff; 
@@ -60,14 +60,29 @@ td.header {
 }
 
 td.mainContent { 
-	background-color:#ffffff; 
-	color:#002b5b; 
+	background-color:#330707; 
+	color:#d3d3d3; 
 	font-family: Arial, Helvetica, sans-serif; 
 	padding:15px; 
 	vertical-align:top; 
 	line-height:1.5;
 	border-radius: 10px;
 }
+
+td.mainContent h1{
+	color: #d3d3d3;
+}
+
+td.mainContent h2{
+	color: #d3d3d3;
+}
+
+tr.spacer{
+	height: 50px;
+}
+
+
+
 
 .mainContent a:hover { color: #002b5b; text-decoration:underline; }
 

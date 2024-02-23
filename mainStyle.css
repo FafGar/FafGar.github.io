@@ -39,6 +39,12 @@ div.page_title{
 	padding-bottom: 15px;
 	padding-top: 10px
 }
+div.footer { 
+	border-radius: 20px;
+	border-width:2px; 
+	background-color:#ffffff;
+}
+
 
 td.header{
 	border-radius: 15px;
@@ -79,6 +85,31 @@ td.mainContent h2{
 
 tr.spacer{
 	height: 50px;
+}
+
+
+a:link.inBody {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+	}
+	
+a:visited.inBody {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+}
+	
+a:hover.inBody {
+	color: rgb(141, 159, 236);
+	background-color: transparent;
+	text-decoration: underline;
+}
+	
+a:active.inBody {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
 }
 
 
